@@ -1,0 +1,44 @@
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+li:has(.compressed-layer):not(:first-of-type) {
+  margin-top: -25px;
+}
+
+img {
+  transition: all 0.5s;
+  border: 1px solid black;
+}
+
+li:has(.compressed-layer) {
+  height: 80px;
+}
+
+li:has(.compressed-layer:hover:not(.opened-layer)) {
+  height: 265px;
+}
+
+li:has(.opened-layer) {
+  height: 400px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+.compressed-layer {
+  height: 265px;
+  transform: rotate3d(1, 0, -0.1, 80deg);
+}
+
+.compressed-layer:hover:not(.opened-layer) {
+  transform: rotate3d(1, 0, -0.1, 40deg);
+}
+
+.opened-layer {
+  transform: rotate3d(1, 0, -0.1, 0deg);
+  height: 400px;
+}

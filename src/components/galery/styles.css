@@ -1,0 +1,19 @@
+.layerSelector {
+  border: 1px solid black;
+  height: 100px;
+  width: 150px;
+  margin: 5px;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+}
+
+.layerSelectorWrapper img {
+  object-fit: contain;
+}
+
+.layerSelectorWrapper .layerSelector {
+  display: inline-block;
+}

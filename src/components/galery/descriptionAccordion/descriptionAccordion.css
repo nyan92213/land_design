@@ -1,0 +1,40 @@
+.description-wrapper {
+  width: 500px;
+  display: inline-block;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #21aeca;
+}
+
+.accordion-title:hover {
+  background-color: #3ab4cc;
+}
+
+.accordion-title,
+.accordion-about,
+.accordion-legend {
+  padding: 1rem;
+}
+
+.accordion-about {
+  background-color: #39b9d2;
+}
+
+.accordion-legend {
+  background-color: #39b9d2;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+}

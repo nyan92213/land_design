@@ -1,7 +1,7 @@
-import "./layersAccord.css";
-import genplan from "../../resources/img/genplan.png";
-import dendroplan from "../../resources/img/dendroplan.png";
-import geodezy from "../../resources/img/geodezy.png";
+import "./layersAccordion.css";
+import genplan from "../../../resources/img/genplan.png";
+import dendroplan from "../../../resources/img/dendroplan.png";
+import geodezy from "../../../resources/img/geodezy.png";
 
 import { useState } from "react";
 import clsx from "clsx";
@@ -12,7 +12,7 @@ const layersArr = [
   { id: "geodezy", src: geodezy },
 ];
 
-function LayersAccord() {
+function LayersAccordion() {
   const [openedLayerId, setOpenedLayerId] = useState(null);
 
   const openLayer = (id) => () => {
@@ -43,4 +43,4 @@ function LayersAccord() {
   );
 }
 
-export default LayersAccord;
+export default LayersAccordion;
